@@ -679,3 +679,43 @@ section {
   margin-right: 40px;
   text-align: center;
 }
+.lead{
+  font-size: 16px;
+}
+.seccionBlog{
+  align-self: center;
+}
+.seccionBlogUno{
+  background-color: #d9d9d9;
+}
+.seccionBlogImagen{
+  background-image: url(../img/Ceci\ Juno\ .jpg);
+}
+.botonNormal{
+  background-color: #ee7623;
+  border-style: none;
+  padding: 15px;
+  width: 150px;
+  font-family: 'Antonio';
+  border-radius: 10px;
+}
+.botonNormal:hover{
+  border: 2px solid #ee7623;
+  background-color: transparent;
+  color: #ee7623;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width:768px){
+  .elementosFooter{
+    align-items: center;
+  }
+  .seccionBlogImagen{
+    display: none;
+  }
+  .seccionBlog{
+    padding: 40px;
+    text-align: center;
+  }
+}
