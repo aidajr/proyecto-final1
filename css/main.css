@@ -688,9 +688,6 @@ section {
 .seccionBlogUno{
   background-color: #d9d9d9;
 }
-.seccionBlogImagen{
-  background-image: url(../img/);
-}
 .botonNormal{
   background-color: #ee7623;
   border-style: none;
@@ -704,7 +701,17 @@ section {
   background-color: transparent;
   color: #ee7623;
 }
-
+.card image{
+  content: cover;
+}
+.badge{
+  width: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: none;
+  border: solid 2px #ee7623;
+  color: #ee7623;
+}
 /*MEDIA QUERIES*/
 
 @media (max-width:768px){
