@@ -16,17 +16,44 @@ $color-secondary: #52565e;
 
 /* Fonts */
 @import "https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
-/* Colors */
-/* Smooth scroll behavior */
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Sections & Section Header
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/*MAPGET*/
+$header:(
+	colorfuente: #2e3135,
+	tFuente: 3em,
+	centro: center
+);
+/*BUCLE*/
+@for $i from 1 to 7 {
+	h#{$i}
+	{
+		font-family: "Antonio", sans-serif;
+	}
+}
+/*EXTEND*/
+.botonComprar{
+	@extend .botonNormal;
+	color: #f5f6f7;
+	&:hover {
+		border: 2px solid white;
+		background-color: transparent;
+		color: $color_5;
+	}
+}
+/*NAV*/
+.navbar{
+	--bs-navbar-hover-color: $color-primary;
+    --bs-navbar-active-color: $color_5;
+	--bs-navbar-color: white;
+	--bs-navbar-toggler-border-color: none;
+	text-transform: uppercase;
+	font-family: 'Antonio', sans-serif;
+}
+.nav-item{
+	margin-left: 20px;
+}
+.nav-item:hover{
+	border-bottom: $color_9 3px solid;
+}
 @-webkit-keyframes animate-preloader {
 	0% {
 		transform: rotate(0deg);
@@ -49,6 +76,9 @@ body {
 	color: $color-primary;
 	overflow-x: hidden;
 }
+p{
+	color: $color_4;
+}
 a {
 	color: $color_5;
 	text-decoration: none;
@@ -56,24 +86,6 @@ a {
 		color: $color_3;
 		text-decoration: none;
 	}
-}
-h1 {
-	font-family: $font-primary;
-}
-h2 {
-	font-family: $font-primary;
-}
-h3 {
-	font-family: $font-primary;
-}
-h4 {
-	font-family: $font-primary;
-}
-h5 {
-	font-family: $font-primary;
-}
-h6 {
-	font-family: $font-primary;
 }
 section {
 	padding: 80px 0;
@@ -145,7 +157,7 @@ section {
 			margin-right: 6px;
 		}
 		h1 {
-			font-size: 24px;
+			font-size: map-get($map:$header, $key:tFuente );
 			font-weight: 700;
 			color: $color_5;
 			margin-bottom: 0;
@@ -283,6 +295,7 @@ section {
 	border-radius: 10px;
 	p {
 		font-size: 16px;
+		color: white;
 	}
 	h2 {
 		font-size: 4em;
@@ -304,6 +317,13 @@ section {
 	align-self: center;
 p{
     color: $color_4;
+}
+}
+.seccionBlogImagen{
+	max-height: 500px;
+img{
+	max-height: 100%;
+	max-width: 100%;
 }
 }
 .seccionBlogUno {
@@ -339,6 +359,15 @@ footer{
     p{
         color: $color_4;
     }
+}
+.explicacion{
+	p{
+		font-family: $font-secondary;
+		font-size: 21px;
+		text-align: justify;
+		font-weight: normal;
+		margin-top: 40px;
+	}
 }
 /*MEDIA QUERIES*/
 @media (min-width: 1199px) {

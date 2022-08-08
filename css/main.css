@@ -1,40 +1,7 @@
 /* Fonts */
 @import "https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
-/* Colors */
-/* Smooth scroll behavior */
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Sections & Section Header
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-body {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #ee7623;
-  overflow-x: hidden; }
-
-a {
-  color: #fff;
-  text-decoration: none; }
-  a:hover {
-    color: #ffc732;
-    text-decoration: none; }
-
+/*MAPGET*/
+/*BUCLE*/
 h1 {
   font-family: "Antonio", sans-serif; }
 
@@ -52,6 +19,56 @@ h5 {
 
 h6 {
   font-family: "Antonio", sans-serif; }
+
+/*EXTEND*/
+.botonComprar {
+  color: #f5f6f7; }
+  .botonComprar:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff; }
+
+/*NAV*/
+.navbar {
+  --bs-navbar-hover-color: $color-primary;
+  --bs-navbar-active-color: $color_5;
+  --bs-navbar-color: white;
+  --bs-navbar-toggler-border-color: none;
+  text-transform: uppercase;
+  font-family: 'Antonio', sans-serif; }
+
+.nav-item {
+  margin-left: 20px; }
+
+.nav-item:hover {
+  border-bottom: #ee7623 3px solid; }
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+body {
+  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #ee7623;
+  overflow-x: hidden; }
+
+p {
+  color: #2e3135; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    color: #ffc732;
+    text-decoration: none; }
 
 section {
   padding: 80px 0;
@@ -116,7 +133,7 @@ section {
     max-height: 40px;
     margin-right: 6px; }
   .header .logo h1 {
-    font-size: 24px;
+    font-size: 3em;
     font-weight: 700;
     color: #fff;
     margin-bottom: 0;
@@ -233,7 +250,8 @@ section {
   padding: 20px;
   border-radius: 10px; }
   .gridDestacados p {
-    font-size: 16px; }
+    font-size: 16px;
+    color: white; }
   .gridDestacados h2 {
     font-size: 4em; }
   .gridDestacados h4 {
@@ -252,17 +270,23 @@ section {
   .seccionBlog p {
     color: #2e3135; }
 
+.seccionBlogImagen {
+  max-height: 500px; }
+  .seccionBlogImagen img {
+    max-height: 100%;
+    max-width: 100%; }
+
 .seccionBlogUno {
   background-color: #f5f6f7; }
 
-.botonNormal {
+.botonNormal, .botonComprar {
   background-color: #ee7623;
   border-style: none;
   padding: 15px;
   width: 150px;
   font-family: "Antonio", sans-serif;
   border-radius: 10px; }
-  .botonNormal:hover {
+  .botonNormal:hover, .botonComprar:hover {
     border: 2px solid #ee7623;
     background-color: transparent;
     color: #ee7623; }
@@ -276,10 +300,17 @@ section {
   margin-top: 10px;
   background-color: none;
   border: solid 2px #ee7623;
-  color: #ee7623; }
+  color: #2e3135; }
 
 footer p {
   color: #2e3135; }
+
+.explicacion p {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  text-align: justify;
+  font-weight: normal;
+  margin-top: 40px; }
 
 /*MEDIA QUERIES*/
 @media (min-width: 1199px) {
