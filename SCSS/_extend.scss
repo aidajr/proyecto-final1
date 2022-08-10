@@ -1,0 +1,10 @@
+/*EXTEND*/
+.botonComprar{
+	@extend .botonNormal;
+	color: #f5f6f7;
+	&:hover {
+		border: 2px solid white;
+		background-color: transparent;
+		color: $color_5;
+	}
+}
