@@ -8,3 +8,13 @@
 		color: $color_5;
 	}
 }
+.botonNormalCards{
+	@extend .botonNormal;
+	color: $color_4;
+	align-items: flex-end;
+	&:hover {
+		border: 2px solid white;
+		background-color: transparent;
+		color: $color_5;
+	}
+}

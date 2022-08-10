@@ -1,7 +1,5 @@
-/* Fonts */
-@import "https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
-/*MAPGET*/
 /*BUCLE*/
+@import "https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
 h1 {
   font-family: "Antonio", sans-serif; }
 
@@ -28,6 +26,16 @@ h6 {
     background-color: transparent;
     color: #fff; }
 
+.botonNormalCards {
+  color: #2e3135;
+  align-items: flex-end; }
+  .botonNormalCards:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff; }
+
+/*MAPGET*/
+/* Fonts */
 /*NAV*/
 .navbar {
   --bs-navbar-hover-color: $color-primary;
@@ -64,7 +72,7 @@ p {
   color: #2e3135; }
 
 a {
-  color: #fff;
+  color: #ee7623;
   text-decoration: none; }
   a:hover {
     color: #ffc732;
@@ -271,28 +279,33 @@ section {
     color: #2e3135; }
 
 .seccionBlogImagen {
-  max-height: 500px; }
+  max-height: 500px;
+  object-fit: cover; }
   .seccionBlogImagen img {
     max-height: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    object-fit: fill; }
 
 .seccionBlogUno {
   background-color: #f5f6f7; }
 
-.botonNormal, .botonComprar {
+.botonNormal, .botonComprar, .botonNormalCards {
   background-color: #ee7623;
   border-style: none;
   padding: 15px;
   width: 150px;
   font-family: "Antonio", sans-serif;
   border-radius: 10px; }
-  .botonNormal:hover, .botonComprar:hover {
+  .botonNormal:hover, .botonComprar:hover, .botonNormalCards:hover {
     border: 2px solid #ee7623;
     background-color: transparent;
     color: #ee7623; }
 
 .card image {
   content: cover; }
+
+.tarjetaDestacados {
+  height: 550px; }
 
 .badge {
   width: 100px;
@@ -341,3 +354,40 @@ footer p {
   .seccionBlog {
     padding: 40px;
     text-align: center; } }
+
+/*CARDS PROXIMOS EVENTOS*/
+.blog-home2 {
+  font-family: "Antonio", sans-serif;
+  color: #2e3135; }
+  .blog-home2 h2 {
+    font-size: 3em;
+    color: #ee7623; }
+  .blog-home2 h4 {
+    margin-top: 10px;
+    font-size: 1.8em; }
+  .blog-home2 h6 {
+    color: #3e4555; }
+  .blog-home2 p {
+    font-family: "Roboto", sans-serif;
+    color: #3e4555;
+    font-size: 1.2em; }
+
+.blog-home2 .bg-light {
+  background-color: #dadada; }
+
+.blog-home2 .on-hover {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+
+.blog-home2 .on-hover:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px); }
+
+.blog-home2 .date-pos {
+  right: 10px;
+  top: 10px; }
+
+.blog-home2 .bg-info-gradiant {
+  background: #ee7623; }
