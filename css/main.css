@@ -391,3 +391,8 @@ footer p {
 
 .blog-home2 .bg-info-gradiant {
   background: #ee7623; }
+
+/*CONTENEDOR CONTACTO*/
+.contacto {
+  margin: auto;
+  padding: auto; }
