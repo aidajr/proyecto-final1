@@ -21,6 +21,11 @@
 .nav-item:hover{
 	border-bottom: $color_9 3px solid;
 } 
+.navbar-toggler{
+	background-color: #ee7623;
+	border: none;
+	color: none;
+}
 @-webkit-keyframes animate-preloader {
 	0% {
 		transform: rotate(0deg);
@@ -347,7 +352,7 @@ footer{
 		p {
 			max-width: 60%;
 		}
-	}
+}
 }
 @media screen and (max-width: 768px) {
 	[data-aos-delay] {
@@ -364,7 +369,7 @@ footer{
 		}
 	}
 }
-@media (min-width: 640px) {
+@media (min-width:640px) {
 	.hero {
 		.carousel-control-prev {
 			padding-left: 15px;

@@ -51,6 +51,11 @@ h6 {
 .nav-item:hover {
   border-bottom: #ee7623 3px solid; }
 
+.navbar-toggler {
+  background-color: #ee7623;
+  border: none;
+  color: none; }
+
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg); }
